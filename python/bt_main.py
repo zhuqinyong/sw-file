@@ -10,6 +10,7 @@ print(uart)
 ATNAME = "AT+NAME=AAAA\r\n"
 ATROLE = "AT+ROLE=2\r\n"
 all_io_L = [0xAA, 0xfc, 0xff, 0xff, 0xe7, 0xf0, 0x00]  # 此指令功能为将所有蓝牙模块核心内OUT引脚设置为高电平
+all_io_H = [0xAA, 0xfc, 0xff, 0xff, 0xe7, 0xff, 0xff]  # 此指令功能为将所有蓝牙模块核心内OUT引脚设置为低电平
 UARTFLAG = False  # 判断蓝牙模块是否初始化完成标志位
 
 
